@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
     },
     location: {
         type: String,
-        required: [true, 'Please provide a location'],
+        // required: [true, 'Please provide a location'],
     },
     image: {
         type: String,
