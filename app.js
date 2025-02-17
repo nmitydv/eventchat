@@ -75,6 +75,17 @@ dotenv.config({ path: "./config.env" });
 //    process.env.DATABASE_PASSWORD
 //  );
 
+
+// const cors = require("cors");
+// app.use(cors({ origin: "*" })); // Allow frontend requests
+
+
+// Set strict-origin-when-cross-origin policy
+
+
+
+
+
 const DB = process.env.URL
 
 mongoose
@@ -308,7 +319,7 @@ io.on("connection", (socket) => {
                   var sender_id = contact.created_by;
                 }
 
-                const message = 'Hii';
+                const message = '';
                 const file_upload = '';
                 const msg = new Msg({ message, sender_id, receiver_id, file_upload });
                 msg.save({ ValidityState: false }).then(() => { });
