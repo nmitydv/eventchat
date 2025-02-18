@@ -12,6 +12,7 @@ router.get('/login', userController.login);
 router.get('/register', userController.register);
 router.get('/forgot_password', userController.forgot_password);
 router.get('/reset_password', userController.reset_password);
+router.get('/user/:email', userController.getUserByEmail)
 
 router.post('/contact', ContactController.create);
 
