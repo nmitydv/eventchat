@@ -104,6 +104,35 @@
     opacity: 0;
   }
 }
+#createOfferBtn {
+  background-color: #5b53ff;  /* Stylish purple color */
+  color: #fff;               /* White text for contrast */
+  font-weight: 600;          /* Bold text */
+  padding: 10px 20px;        /* Proper padding */
+  border: none;              /* Remove default border */
+  border-radius: 8px;        /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  font-size: 14px;           /* Adjust text size */
+  display: inline-flex;      /* Use flex for better alignment */
+  align-items: center;       /* Center items */
+  justify-content: center;   /* Center text */
+  cursor: pointer;           /* Pointer cursor on hover */
+  white-space: nowrap;       /* Prevent text wrapping */
+  width: auto;               /* Allow it to resize with content */
+  min-width: fit-content;    /* Ensure it wraps text correctly */
+}
+
+#createOfferBtn:hover {
+  background-color: #4339d7; /* Slightly darker on hover */
+  box-shadow: 0px 4px 10px rgba(91, 83, 255, 0.3); /* Soft shadow effect */
+}
+
+#createOfferBtn i {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 16px;   /* Adjust icon size */
+}
+
+
 
 #video-call-div {
   position: absolute;

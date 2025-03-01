@@ -573,9 +573,9 @@
       <div class="d-lg-flex">
         <!-- start chat conversation section -->
         <div class="w-100 overflow-hidden position-relative user-chats1">
-          <div class="px-3 px-lg-4 border-bottom" id="userProfileBar">
+          <div class="px-0 px-lg-4 border-bottom" id="userProfileBar">
             <div class="row align-items-center w-100">
-              <div class="col-sm-4 col-8">
+              <div class="col-sm-4 col-7">
                 <div class="d-flex align-items-center user_detail">
                   <div class="d-block d-lg-none me-2 ms-0">
                     <a href="javascript: void(0);" class="user-chat-remove text-muted font-size-16 p-2"><i class="ri-arrow-left-s-line"></i></a>
@@ -590,8 +590,16 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-8 col-4">
+              <div class="col-sm-8 col-5">
                 <ul class="list-inline user-chat-nav text-end mb-0">
+                  <li class="list-inline-item d-none d-md-inline">
+                    <div class="dropdown d-inline">
+                      <button type="button" data-bs-toggle="dropdown" class="btn nav-btn dropdown-toggle" id="createOfferBtn">
+                        Create Offer
+                      </button>
+                    </div>
+                  </li>
+              
                   <li class="list-inline-item">
                     <div class="dropdown">
                       <button class="btn nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -599,46 +607,50 @@
                       </button>
                       <div class="dropdown-menu p-0 dropdown-menu-end dropdown-menu-md">
                         <div class="search-box p-2">
-                          <input type="text" id="message_search" class="form-control bg-light border-0"
-                            placeholder="Search..">
+                          <input type="text" id="message_search" class="form-control bg-light border-0" placeholder="Search..">
                         </div>
                       </div>
                     </div>
                   </li>
-
-                  <li class="list-inline-item me-2 ms-0 audiocallicon">
+              
+                  <li class="list-inline-item me-md-2 me-1 ms-0 audiocallicon">
                     <button type="button" class="btn nav-btn" data-bs-toggle="modal" data-bs-target="#audiocallModal">
                       <i class="ri-phone-line"></i>
                     </button>
                   </li>
-
-                  <li class="list-inline-item me-2 ms-0 videocallicon">
+              
+                  <li class="list-inline-item me-md-2 me-1 ms-0 videocallicon">
                     <button type="button" class="btn nav-btn" data-bs-toggle="modal" data-bs-target="#videocallModal">
                       <i class="ri-vidicon-line"></i>
                     </button>
                   </li>
-
-                  <li class="list-inline-item d-none d-lg-inline-block me-2 ms-0">
+              
+                  <li class="list-inline-item d-none d-lg-inline-block me-md-2 me-1 ms-0">
                     <button type="button" class="btn nav-btn user-profile-show">
                       <i class="ri-user-2-line"></i>
                     </button>
                   </li>
-
-                  <li class="list-inline-item">
+              
+                  <li class="list-inline-item ">
                     <div class="dropdown">
                       <button class="btn nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="ri-more-fill"></i>
                       </button>
                       <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item d-block d-lg-none user-profile-show" href="javascript:void(0);">View profile <i class="ri-user-2-line float-end text-muted"></i></a>
+                        <a class="dropdown-item d-block d-lg-none user-profile-show" href="javascript:void(0);">View Profile <i class="ri-user-2-line float-end text-muted"></i></a>
                         <a class="dropdown-item d-block d-lg-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#audiocallModal">Audio <i class="ri-phone-line float-end text-muted"></i></a>
                         <a class="dropdown-item d-block d-lg-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#videocallModal">Video <i class="ri-vidicon-line float-end text-muted"></i></a>
                         <a class="dropdown-item receiver_data" id="" onclick="deleteAllMessage(this)" href="javascript:void(0);">Clear Chat <i class="ri-delete-bin-line float-end text-muted"></i></a>
+                        
+                        <a class="dropdown-item d-md-none" href="javascript:void(0);" id="createOfferMobile">
+                          Create Offer <i class="ri-file-list-line float-end text-muted"></i>
+                        </a>
                       </div>
                     </div>
                   </li>
                 </ul>
               </div>
+              
             </div>
           </div>
           <!-- end chat user head -->
